@@ -39,7 +39,6 @@ const animalsToAdopt = [
 // cardButton: a button with the class card-button, the InnerHTML "Adopt Now" and add it to the cardBody
 // Once you've finished, now, create a for loop, that goes through the animalsToAdopt array and create one card for every element of the array.
 
-/
 const cards = document.querySelector(".cards");
 
 animalsToAdopt.forEach((animal) => {
@@ -74,5 +73,3 @@ animalsToAdopt.forEach((animal) => {
   card.appendChild(cardHeader);
   card.appendChild(cardBody);
 });
-
-
