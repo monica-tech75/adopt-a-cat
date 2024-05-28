@@ -39,13 +39,7 @@ const animalsToAdopt = [
 // cardButton: a button with the class card-button, the InnerHTML "Adopt Now" and add it to the cardBody
 // Once you've finished, now, create a for loop, that goes through the animalsToAdopt array and create one card for every element of the array.
 
-// const createDivCard = () => {
-//   for (let i = 0; i < animalsToAdopt.length; i++) {
-//     const card = document.createElement("div");
-//     card.classList.add("card");
-//     cards.appendChild("card");
-//   }
-// };
+/
 const cards = document.querySelector(".cards");
 
 animalsToAdopt.forEach((animal) => {
@@ -81,35 +75,4 @@ animalsToAdopt.forEach((animal) => {
   card.appendChild(cardBody);
 });
 
-// Create a card for each animal
-// animalsToAdopt.forEach((animal) => {
-//   const card = document.createElement("div"); // Create a new card element
-//   card.classList.add("card"); // Add the "card" class to the card
 
-//   // Create card header (image)
-//   const cardHeader = document.createElement("div");
-//   cardHeader.classList.add("card-header");
-//   const cardImg = document.createElement("div");
-//   cardImg.classList.add("card-img");
-//   cardImg.style.backgroundImage = `url(${animal.picture})`; // Set the background image
-//   cardHeader.appendChild(cardImg);
-
-//   // Create card body (title and button)
-//   const cardBody = document.createElement("div");
-//   cardBody.classList.add("card-body");
-//   const cardTitle = document.createElement("h2");
-//   cardTitle.classList.add("card-title");
-//   cardTitle.textContent = animal.name; // Set the animal name
-//   const adoptButton = document.createElement("button");
-//   adoptButton.classList.add("card-button");
-//   adoptButton.textContent = "Adopt Now"; // Set button text
-
-//   // Append elements to the card
-//   cardBody.appendChild(cardTitle);
-//   cardBody.appendChild(adoptButton);
-//   card.appendChild(cardHeader);
-//   card.appendChild(cardBody);
-
-//   // Append the card to the container
-//   cardContainer.appendChild(card);
-// });
