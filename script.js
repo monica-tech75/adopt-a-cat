@@ -72,4 +72,11 @@ animalsToAdopt.forEach((animal) => {
   cardHeader.appendChild(cardImg);
   card.appendChild(cardHeader);
   card.appendChild(cardBody);
+
+  cardButton.addEventListener("click", () => {
+    const newName = prompt(
+      "Thanks for adopting me, you can give me another name if you wish!"
+    );
+    cardTitle.textContent = newName;
+  });
 });
